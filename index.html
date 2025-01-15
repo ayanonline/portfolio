@@ -19,6 +19,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
@@ -40,7 +43,7 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="about-image">
-                    <img src="ayan.jpg" alt="Ayan Sarkar">
+                    <img src="images/ayan.jpg" alt="Ayan Sarkar">
                 </div>
                 <div class="about-text">
                     <h2>About Me</h2>
@@ -80,15 +83,15 @@
                 <h2>Portfolio</h2>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <img src="hq720.jpg" alt="Project">
+                        <img src="images/hq720.jpg" alt="Project">
                         <h3>Dynamic Web Project</h3>
                     </div>
                     <div class="portfolio-item">
-                        <img src="ai.jpg" alt="Project">
+                        <img src="images/ai.jpg" alt="Project">
                         <h3>AI Exploration</h3>
                     </div>
                     <div class="portfolio-item">
-                        <img src="modern.jpg" alt="Project">
+                        <img src="images/modern.jpg" alt="Project">
                         <h3>Modern Tech Integration</h3>
                     </div>
                 </div>
@@ -96,41 +99,18 @@
         </section>
 
         <!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Interested in collaborating or have questions? Let’s connect!</p>
-
-        <!-- Form -->
-        <form id="contact-form" action="mailto:aysarkar2007@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
-            <div class="form-group">
-                <div class="input-container">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Interested in collaborating or have questions? Let’s connect!</p>
+                <form id="contact-form" action="mailto:aysarkar2007@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
             </div>
-
-            <div class="form-group">
-                <div class="input-container">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="input-container">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="7" required></textarea>
-                </div>
-            </div>
-
-            <button type="submit" class="cta-button">Send Message</button>
-
-            <!-- Success/Error Message -->
-            <div id="form-response" class="form-response" style="display: none;"></div>
-        </form>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer>
@@ -138,5 +118,14 @@
             <p>&copy; 2025 Ayan Sarkar. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
