@@ -224,7 +224,6 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
         /* General Reset */
         * {
             margin: 0;
@@ -485,3 +484,63 @@ footer {
             text-align: center;
             padding: 20px;
         }
+
+        /* Mobile-first Design */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+header .nav-links li {
+    margin: 0 10px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+}
+
+/* Other sections follow similar responsive adjustments */
