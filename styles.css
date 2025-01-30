@@ -87,18 +87,22 @@ video {
 }
 
 /* About Section */
-#about .container {
+#about {
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns items to the left */
-    gap: 20px; /* Reduces space between the image and text */
-    flex-wrap: wrap;
-    padding: 20px 300px; /* Adds some padding on the left and right */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add space between the image and text */
 }
 
-.about-image {
-    flex: 1;
-    margin-right: 10px; /* Reduced space between the image and text */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
 }
 
 .about-image img {
@@ -109,9 +113,7 @@ video {
 }
 
 .about-text {
-    flex: 2;
-    max-width: 600px;
-    padding-left: 10px; /* Adds some space between the image and text */
+    flex: 1; /* Take the remaining space */
 }
 
 .about-text h2 {
