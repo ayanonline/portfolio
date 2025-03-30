@@ -1,0 +1,26 @@
+/* Main CSS File - Ayan Sarkar Portfolio */
+
+/* Import all CSS components */
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('pages.css');
+@import url('animations.css');
+@import url('utilities.css');
+@import url('dark-mode.css');
+@import url('responsive.css');
+
+/* Variables for consistent styling */
+:root {
+    --primary-color: #4a6cf7;
+    --secondary-color: #2a3855;
+    --accent-color: #f86f03;
+    --text-color: #333;
+    --light-text: #f4f4f4;
+    --background-color: #ffffff;
+    --section-bg: #f9fafb;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --primary-rgb: 74, 108, 247;
+} 
