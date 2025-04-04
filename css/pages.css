@@ -860,7 +860,7 @@ header .logo {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: white;
     transition: color 0.3s ease;
 }
 
