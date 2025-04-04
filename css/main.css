@@ -1,0 +1,33 @@
+/* Main CSS File - Ayan Sarkar Portfolio */
+
+/* Import all CSS components */
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('pages.css');
+@import url('animations.css');
+@import url('utilities.css');
+@import url('dark-mode.css');
+@import url('responsive.css');
+
+/* Variables for consistent styling */
+:root {
+    --primary-color: #5e60ce;
+    --secondary-color: #1a1a2e;
+    --accent-color: #ff5e78;
+    --text-color: #222831;
+    --light-text: #f8f9fa;
+    --background-color: #ffffff;
+    --section-bg: #f8f9fd;
+    --border-radius: 12px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --primary-rgb: 94, 96, 206;
+    --accent-rgb: 255, 94, 120;
+    --card-hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    --header-height: 80px;
+    --gradient-primary: linear-gradient(135deg, #5e60ce, #5390d9);
+    --gradient-accent: linear-gradient(135deg, #ff5e78, #ffbe0b);
+    --gradient-mix: linear-gradient(135deg, #5e60ce, #ff5e78);
+    --border-light: 1px solid rgba(0, 0, 0, 0.08);
+} 
