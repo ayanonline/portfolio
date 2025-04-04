@@ -519,7 +519,7 @@ textarea.form-control {
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
