@@ -45,8 +45,8 @@
 
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid white;
+    color: white;
 }
 
 .btn-secondary:hover {
