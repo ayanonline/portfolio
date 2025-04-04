@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ayan Sarkar's Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Explore Ayan Sarkar's projects in web development, AI, and more">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="header-logo">
+                <img src="../assets/images/ayan.jpg" alt="Ayan Sarkar" class="logo-image">
+                <span class="logo">Ayan Sarkar</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section id="page-header" class="section">
+            <div class="container">
+                <h1 class="page-title">My Projects</h1>
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a> / <span>Projects</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Filters -->
+        <section id="project-filters" class="section">
+            <div class="container">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="esp32">ESP32</button>
+                    <button class="filter-btn" data-filter="arduino">Arduino</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section id="projects-showcase" class="section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Web App Project -->
+                    <div class="project-card card hover-lift" id="web-app">
+                        <div class="card-body">
+                            <div class="project-header">
+                                <div class="project-badge web">Web Development</div>
+                                <h2>Dynamic Web Application</h2>
+                            </div>
+                            <div class="framed-image">
+                                <img src="../assets/images/hq720.jpg" alt="Student Collaboration Platform" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <p>A comprehensive web platform designed to facilitate student collaboration on academic projects. This application enables students to create project groups, share resources, and communicate effectively.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                                <div class="project-features">
+                                    <h3>Key Features</h3>
+                                    <ul>
+                                        <li>User authentication and profile management</li>
+                                        <li>Project creation and team formation</li>
+                                        <li>Real-time messaging and notifications</li>
+                                        <li>File sharing and collaborative document editing</li>
+                                        <li>Task management with deadline reminders</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayanonline/" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-5"></i>Source Code</a>
+                                    <a href="#" target="_blank" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt me-5"></i>Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Chat Project -->
+                    <div class="project-card card hover-lift" id="ai-chat">
+                        <div class="card-body">
+                            <div class="project-header">
+                                <div class="project-badge ai-ml">AI & ML</div>
+                                <h2>AI Chat Assistant</h2>
+                            </div>
+                            <div class="framed-image">
+                                <img src="../assets/images/ai.jpg" alt="AI Chat Assistant" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <p>A conversational AI assistant that utilizes natural language processing to provide helpful responses to user queries. This project demonstrates my ability to implement machine learning models and create intuitive user interfaces.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-features">
+                                    <h3>Key Features</h3>
+                                    <ul>
+                                        <li>Natural language understanding and generation</li>
+                                        <li>Context-aware responses with memory of conversation history</li>
+                                        <li>Integration with external APIs for enhanced capabilities</li>
+                                        <li>Responsive web interface with speech recognition</li>
+                                        <li>Continuous learning from user interactions</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayanonline/" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-5"></i>Source Code</a>
+                                    <a href="#" target="_blank" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt me-5"></i>Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ESP32 Project -->
+                    <div class="project-card card hover-lift" id="esp32-project">
+                        <div class="card-body">
+                            <div class="project-header">
+                                <div class="project-badge esp32">ESP32</div>
+                                <h2>ESP32 Smart Home Project</h2>
+                            </div>
+                            <div class="framed-image">
+                                <img src="../assets/images/esp32-project.jpg" alt="ESP32 Smart Home Project" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <p>A comprehensive smart home system built around the ESP32 microcontroller. This project showcases my skills in IoT development, hardware integration, and creating practical solutions for everyday problems.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">ESP32</span>
+                                    <span class="tech-tag">Arduino IDE</span>
+                                    <span class="tech-tag">MQTT</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">React</span>
+                                </div>
+                                <div class="project-features">
+                                    <h3>Key Features</h3>
+                                    <ul>
+                                        <li>Remote control of home appliances via web and mobile app</li>
+                                        <li>Environmental monitoring (temperature, humidity, air quality)</li>
+                                        <li>Automated routines based on time or sensor data</li>
+                                        <li>Energy consumption tracking and optimization</li>
+                                        <li>Integration with voice assistants (Google Assistant, Alexa)</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayanonline/" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-5"></i>Source Code</a>
+                                    <a href="https://www.youtube.com/@AyanOnline-y4t" target="_blank" class="btn btn-sm btn-accent"><i class="fab fa-youtube me-5"></i>Watch Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Arduino Project -->
+                    <div class="project-card card hover-lift" id="arduino-project">
+                        <div class="card-body">
+                            <div class="project-header">
+                                <div class="project-badge arduino">Arduino</div>
+                                <h2>Arduino Weather Station</h2>
+                            </div>
+                            <div class="framed-image">
+                                <img src="../assets/images/arduino-project.jpg" alt="Arduino Weather Station" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <p>A DIY weather station built with Arduino that collects and displays environmental data. This project demonstrates my ability to work with hardware sensors and create useful data visualization interfaces.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Arduino</span>
+                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">HTML/CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Chart.js</span>
+                                </div>
+                                <div class="project-features">
+                                    <h3>Key Features</h3>
+                                    <ul>
+                                        <li>Multi-parameter environmental monitoring (temperature, humidity, pressure, etc.)</li>
+                                        <li>LCD display for real-time data viewing</li>
+                                        <li>Data logging to SD card for historical analysis</li>
+                                        <li>Web interface for remote monitoring</li>
+                                        <li>Weather forecasting based on collected data patterns</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayanonline/" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-5"></i>Source Code</a>
+                                    <a href="https://www.youtube.com/@AyanOnline-y4t" target="_blank" class="btn btn-sm btn-accent"><i class="fab fa-youtube me-5"></i>Watch Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Analysis Project -->
+                    <div class="project-card card hover-lift" id="data-project">
+                        <div class="card-body">
+                            <div class="project-header">
+                                <div class="project-badge web">Web</div>
+                                <div class="project-badge ai-ml">AI & ML</div>
+                                <h2>Educational Data Analysis Dashboard</h2>
+                            </div>
+                            <div class="framed-image">
+                                <img src="../assets/images/data-analysis.jpg" alt="Data Analysis Dashboard" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <p>An interactive dashboard for analyzing educational data and visualizing student performance metrics. This project showcases my ability to work with data analysis tools and create insightful visualizations.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Plotly</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-features">
+                                    <h3>Key Features</h3>
+                                    <ul>
+                                        <li>Interactive data visualization with filtering capabilities</li>
+                                        <li>Trend analysis for student performance over time</li>
+                                        <li>Predictive analytics for identifying at-risk students</li>
+                                        <li>Custom reporting tools for educators</li>
+                                        <li>Data import/export functionality</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayanonline/" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-5"></i>Source Code</a>
+                                    <a href="#" target="_blank" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt me-5"></i>Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Workflow Section -->
+        <section id="project-workflow" class="section bg-light">
+            <div class="container">
+                <h2 class="text-center">My Project Workflow</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Concept & Research</h3>
+                            <p>I start by understanding the problem and researching existing solutions to identify
+                                opportunities for innovation.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Planning & Design</h3>
+                            <p>I create detailed plans and designs that outline the project structure, user interface,
+                                and key features.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Development</h3>
+                            <p>I implement the solution using appropriate technologies, following best practices and
+                                coding standards.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Testing & Refinement</h3>
+                            <p>I rigorously test the solution to identify and fix bugs, optimize performance, and
+                                enhance user experience.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Deployment & Maintenance</h3>
+                            <p>I deploy the solution and provide ongoing maintenance and updates to ensure it remains
+                                functional and relevant.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Activity -->
+        <section id="github-activity" class="section">
+            <div class="container">
+                <h2 class="text-center">GitHub Activity</h2>
+                <p class="text-center">Check out my contributions and activities on GitHub:</p>
+                <div class="github-stats">
+                    <div class="github-stat">
+                        <h3>Repositories</h3>
+                        <p class="stat-number">15+</p>
+                    </div>
+                    <div class="github-stat">
+                        <h3>Contributions</h3>
+                        <p class="stat-number">500+</p>
+                    </div>
+                    <div class="github-stat">
+                        <h3>Stars</h3>
+                        <p class="stat-number">50+</p>
+                    </div>
+                    <div class="github-stat">
+                        <h3>Forks</h3>
+                        <p class="stat-number">20+</p>
+                    </div>
+                </div>
+                <div class="text-center mt-30">
+                    <a href="https://github.com/avanonline/" target="_blank" class="cta-button">Visit My GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-30">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about my projects and development approach</p>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item card mb-20">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3><i class="fas fa-question-circle me-10"></i> How do you approach new project ideas?</h3>
+                            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>When approaching new project ideas, I follow a structured process that starts with thorough research and requirements gathering. I then create wireframes and prototypes to visualize the solution, followed by iterative development with regular testing. Throughout the process, I focus on user needs, scalability, and implementing best practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item card mb-20">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3><i class="fas fa-question-circle me-10"></i> Can I request customizations to existing projects?</h3>
+                            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Absolutely! All the projects showcased here can be customized to fit specific requirements. Whether you need additional features, different design elements, or integration with other systems, I can adapt these projects to meet your needs. Feel free to reach out with your requirements, and we can discuss the possibilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item card mb-20">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3><i class="fas fa-question-circle me-10"></i> Are the source codes for these projects available?</h3>
+                            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Many of my projects have their source code available on my GitHub repository. For educational and open-source projects, I typically make the full code accessible. For client projects, I respect confidentiality agreements. If you're interested in a specific project's code, please contact me, and I'll let you know about its availability or can provide code samples.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item card mb-20">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3><i class="fas fa-question-circle me-10"></i> How do you handle project collaboration?</h3>
+                            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>I approach collaboration with clear communication, defined roles, and structured workflows. I use version control systems like Git for code management, project management tools for task tracking, and regular meetings to ensure everyone is aligned. I'm comfortable working in agile environments and adapting to different team structures and collaboration styles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="section bg-light">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Let's Work on Your Next Project</h2>
+                    <p>Have a project idea or need technical assistance? I'm here to help!</p>
+                    <a href="contact.html" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="header-logo">
+                        <img src="../assets/images/ayan.jpg" alt="Ayan Sarkar" class="logo-image">
+                        <h3>Ayan Sarkar</h3>
+                    </div>
+                    <p>Student • Programmer • Tech Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/ayanonline/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/at_avan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="https://github.com/ayanonline/" target="_blank">Ayan Sarkar</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="dark-mode-toggle" id="darkModeToggle">🌙</div>
+
+    <script src="../script.js"></script>
+    <!-- FAQ Accordion Script -->
+    <script>
+        function toggleAccordion(element) {
+            const accordionContent = element.nextElementSibling;
+            const isOpen = accordionContent.style.maxHeight;
+
+            // Close all accordion items
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.style.maxHeight = null;
+            });
+
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.classList.remove('active');
+            });
+
+            // Open clicked item if it was closed
+            if (!isOpen) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                element.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
