@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Sarkar's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Ayan Sarkar - Student, Programmer and AI Enthusiast">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/ayan.jpg" alt="Ayan Sarkar" class="logo-image pulse-slow">
+                <span class="logo">Ayan Sarkar</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Video Background -->
+        <section id="hero">
+            <video autoplay muted loop>
+                <source src="assets/videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h2>Hello, I'm <span>Ayan Sarkar</span></h2>
+                <p>A student, programmer, and tech enthusiast from West Bengal, India.</p>
+                <div class="cta-buttons">
+                    <a href="pages/portfolio.html" class="btn btn-primary">View My Work</a>
+                    <a href="pages/contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section id="featured" class="section">
+            <div class="container">
+                <h2 class="text-center fade-in">Featured Skills</h2>
+                <div class="grid-3">
+                    <div class="card md-elevation-1 md-elevation-hover fade-in-up" data-delay="0.1">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>Creating responsive and user-friendly websites with modern technologies.</p>
+                            <a href="pages/services.html#web-dev" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card md-elevation-1 md-elevation-hover fade-in-up" data-delay="0.2">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                            <p>Exploring artificial intelligence and implementing machine learning solutions.</p>
+                            <a href="pages/services.html#ai-ml" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card md-elevation-1 md-elevation-hover fade-in-up" data-delay="0.3">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>ESP32 & Arduino</h3>
+                            <p>Building smart IoT devices and embedded systems for various applications.</p>
+                            <a href="pages/services.html#esp32-projects" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Projects Preview -->
+        <section id="latest-projects" class="section bg-light">
+            <div class="container">
+                <h2 class="text-center fade-in">Latest Projects</h2>
+                <div class="grid-2">
+                    <div class="project-item md-elevation-2 md-elevation-hover shine-hover">
+                        <div class="project-image">
+                            <img src="assets/images/hq720.jpg" alt="Web Project">
+                        </div>
+                        <div class="project-details">
+                            <h3>Student Collaboration Platform</h3>
+                            <p>A responsive web application built to help students collaborate on projects, share resources, and communicate effectively.</p>
+                            <div class="project-tech">
+                                <span class="tag tag-primary">HTML</span>
+                                <span class="tag tag-primary">CSS</span>
+                                <span class="tag tag-primary">JavaScript</span>
+                            </div>
+                            <a href="pages/projects.html#web-project" class="btn btn-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card project-card md-elevation-2 md-elevation-hover shine-hover">
+                        <div class="card-image">
+                            <img src="assets/images/esp32-project.jpg" alt="ESP32 Project">
+                        </div>
+                        <div class="card-body">
+                            <h3>ESP32 Smart Home Hub</h3>
+                            <p>An intelligent IoT system for home automation and monitoring with real-time data visualization.</p>
+                            <div class="project-tech">
+                                <span class="tag tag-primary">Arduino</span>
+                                <span class="tag tag-primary">IoT</span>
+                                <span class="tag tag-primary">Python</span>
+                            </div>
+                            <a href="pages/projects.html#esp32-project" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-50 fade-in">
+                    <a href="pages/portfolio.html" class="btn btn-accent">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="text-center fade-in">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item fade-in-left">
+                        <div class="skill-info">
+                            <h4>Web Development</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item fade-in-left" data-delay="0.1">
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item fade-in-left" data-delay="0.2">
+                        <div class="skill-info">
+                            <h4>IoT Development</h4>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item fade-in-left" data-delay="0.3">
+                        <div class="skill-info">
+                            <h4>Machine Learning</h4>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="section">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 class="mb-20">Let's Work Together</h2>
+                    <p class="mb-30">Interested in collaborating on a project or have questions about my work?</p>
+                    <a href="pages/contact.html" class="btn btn-accent btn-lg pulse">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="header-logo">
+                        <img src="assets/images/ayan.jpg" alt="Ayan Sarkar" class="logo-image">
+                        <h3>Ayan Sarkar</h3>
+                    </div>
+                    <p>Student • Programmer • Tech Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/ayanonline/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/at_avan/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="https://github.com/ayanonline/" target="_blank">Ayan Sarkar</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
